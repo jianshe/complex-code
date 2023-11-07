@@ -1,19 +1,25 @@
 <template>
   <!-- <form-demo></form-demo> -->
   <!-- <Layout></Layout> -->
-  <LayoutCenter></LayoutCenter>
+  <!-- <LayoutCenter></LayoutCenter> -->
+  <!-- <ParentComponent></ParentComponent> -->
+  <Popup-demo></Popup-demo>
 </template>
 
 <script>
 import { ref } from "vue";
 import FormDemo from "./demos/formDemo/index.vue";
+import PopupDemo from "./demos/popupDemo/index.vue";
 // import Layout from "./components/Layout.vue"
-import LayoutCenter from "./components/LayoutCenter.vue"
+import LayoutCenter from "./components/LayoutCenter.vue";
+import ParentComponent from "./components/iframe/ParentComponent.vue";
 export default {
   components: {
     // Layout,
+    PopupDemo,
     LayoutCenter,
     FormDemo,
+    ParentComponent,
   },
   setup() {
     const formData = ref({
