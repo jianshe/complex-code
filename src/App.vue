@@ -3,23 +3,29 @@
   <!-- <Layout></Layout> -->
   <!-- <LayoutCenter></LayoutCenter> -->
   <!-- <ParentComponent></ParentComponent> -->
-  <Popup-demo></Popup-demo>
+  <!-- <Popup-demo></Popup-demo> -->
+  <!-- <ParentComp></ParentComp> -->
+  <RouteDemo></RouteDemo>
 </template>
 
 <script>
 import { ref } from "vue";
 import FormDemo from "./demos/formDemo/index.vue";
 import PopupDemo from "./demos/popupDemo/index.vue";
+import RouteDemo from "./demos/routeDemo/index.vue"
 // import Layout from "./components/Layout.vue"
 import LayoutCenter from "./components/LayoutCenter.vue";
-import ParentComponent from "./components/iframe/ParentComponent.vue";
+import ParentComp from "./components/communite/ParentComp";
+
+// import ParentComponent from "./components/iframe/ParentComponent.vue";
 export default {
   components: {
     // Layout,
+    RouteDemo,
     PopupDemo,
     LayoutCenter,
     FormDemo,
-    ParentComponent,
+    ParentComp,
   },
   setup() {
     const formData = ref({
