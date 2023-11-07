@@ -1,14 +1,18 @@
 <template>
-  <form-demo></form-demo>
+  <!-- <form-demo></form-demo> -->
+  <!-- <Layout></Layout> -->
+  <LayoutCenter></LayoutCenter>
 </template>
 
 <script>
 import { ref } from "vue";
 import FormDemo from "./demos/formDemo/index.vue";
-import Layout from "./components/Layout.vue"
+// import Layout from "./components/Layout.vue"
+import LayoutCenter from "./components/LayoutCenter.vue"
 export default {
   components: {
-    Layout,
+    // Layout,
+    LayoutCenter,
     FormDemo,
   },
   setup() {
